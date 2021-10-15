@@ -1,0 +1,211 @@
+$base-color: rgb(138, 32, 10);
+$secondary-color: rgb(234, 140, 28);
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('../image/background.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: top;
+    &::-webkit-scrollbar {
+        width: 0;
+      }
+    header {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.2)), url('../image/header-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        @media (max-width: 575.98px) {
+            padding-top: 10vh;
+        }
+        .row {
+            .text-header {
+                h1 {
+                    font-size: 58px;
+                    color: $base-color;
+                    -webkit-text-stroke: 0.3px white;
+                    @media (max-width: 575.98px) {
+                        -webkit-text-stroke: 0.3px white;
+                    }
+                    font-weight: 900;
+                    line-height: 85px;
+                }
+                p {
+                    font-size: 35px;
+                    font-weight: 900;
+                    color: $base-color;
+                    -webkit-text-stroke: 0.3px white;
+                    @media (max-width: 575.98px) {
+                        -webkit-text-stroke: 0.3px white;
+                    }
+                    font-weight: 700;
+                }
+                a {
+                    font-size: large;
+                }
+                .shopee {     
+                    width: 50px;
+                    &:hover {
+                        margin-right: 5px;
+                        width: 45px;
+                        transition: all 0.2s;
+                        filter: drop-shadow(2px 5px 5px black);
+                    }
+                }
+                .instagram {
+                    margin-left: 5px;
+                    width: 50px;
+                    &:hover {
+                        width: 45px;
+                        transition: all 0.2s;
+                        filter: drop-shadow(2px 5px 5px black);
+                    }
+                }
+            }
+            @media (max-width: 575.98px) {
+                .text-header {
+                    margin-top: -60vh;
+                    h1 {
+                        font-size: 60px;
+                    }
+                    p {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        @media (max-width: 575.98px) {
+            margin-top: -60vh;
+        }
+        #goUpBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 15px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: $base-color;
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 50px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+          }          
+        .promotion {
+            img {
+                filter: drop-shadow(2px 5px 20px black);
+            }
+            #promote-first {
+                @media (max-width: 575.98px) {
+                    margin-top: 65vh;
+                    img {
+                        margin-top: -10vh;
+                    }
+                }
+                .text-header {
+                    h1 {
+                        @media (max-width: 575.98px) {
+                            font-size: 43px;
+                        }
+                        font-size: 3em;
+                        color: $base-color;
+                        font-weight: 900;
+                        -webkit-text-stroke: 1px white;
+                    }
+                    p {
+                        @media (max-width: 575.98px) {
+                            font-size: 20px;
+                        }
+                        font-size: 20px;
+                        color: black;
+                        font-weight: 900;
+                        -webkit-text-stroke: 0.1px white;
+                    }
+                }
+            }
+            #promote2 {
+                margin-top: -20vh;
+                @media (max-width: 575.98px) {
+                    margin-top: 0;
+                    img {
+                        margin-top: -10vh;
+                    }
+                }
+                .text-header {
+                    h1 {
+                        @media (max-width: 575.98px) {
+                            font-size: 43px;
+                        }
+                        font-size: 3em;
+                        color: $base-color;
+                        font-weight: 900;
+                        -webkit-text-stroke: 1px white;
+                    }
+                    p {
+                        @media (max-width: 575.98px) {
+                            font-size: 20px;
+                        }
+                        font-size: 20px;
+                        color: black;
+                        font-weight: 900;
+                        -webkit-text-stroke: 0.1px white;
+                    }
+                }
+            }
+            #promote-last {
+                @media (max-width: 575.98px) {
+                    margin-top: 0;
+                    img {
+                        margin-top: -10vh;
+                    }
+                }
+                .text-header {
+                    h1 {
+                        @media (max-width: 575.98px) {
+                            font-size: 43px;
+                        }
+                        font-size: 3em;
+                        color: $base-color;
+                        font-weight: 900;
+                        -webkit-text-stroke: 1px white;
+                    }
+                    p {
+                        @media (max-width: 575.98px) {
+                            font-size: 20px;
+                        }
+                        font-size: 20px;
+                        color: black;
+                        font-weight: 900;
+                        -webkit-text-stroke: 0.1px white;
+                    }
+                }
+            }
+        }
+        .testimonial {
+            margin-top: 20vh !important;
+            margin-bottom: 5vh;
+            @media (max-width: 575.98px) {
+                margin-top: -2vh;
+            }
+            h1 {
+                @media (max-width: 575.98px) {
+                    font-size: 35px;
+                }
+                color: $base-color;
+                font-weight: 900;
+                font-size: 50px;
+            }
+            margin-top: 30vh;
+            .carousel-inner {
+                border: 1px solid $base-color;
+            }
+        }        
+    }
+    
+}
