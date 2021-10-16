@@ -244,6 +244,11 @@ body section .promotion #promote-last .text-header p {
   }
 }
 
+body section .promotion #promote-last .text-header a {
+  background-color: #8a200a;
+  color: white;
+}
+
 body section .testimonial {
   margin-top: 20vh !important;
   margin-bottom: 5vh;

@@ -184,6 +184,10 @@ body{
                         font-weight: 900;
                         -webkit-text-stroke: 0.1px white;
                     }
+                    a {
+                        background-color: $base-color;
+                        color: white;
+                    }
                 }
             }
         }
